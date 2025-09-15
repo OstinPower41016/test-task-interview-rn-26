@@ -1,0 +1,11 @@
+procs:
+  Host:
+    shell: pnpm --filter host start 
+    stop: SIGKILL
+  MicroFront:
+    shell: pnpm --filter microFront start 
+    stop: SIGKILL
+  UIKit:
+    shell: pnpm --filter ui-kit dev
+    stop: SIGKILL
+
